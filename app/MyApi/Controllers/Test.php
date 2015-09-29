@@ -10,11 +10,13 @@ class Test extends ControllerManager
 {
     public static function test_get()
     {
-        return ResponseProxy::sendReponse(Models\Test::test());
+        $obj = new Models\Test();
+        return ResponseProxy::sendReponse($obj->test());
     }
 
     public static function test_post($id, $email)
     {
-        return ResponseProxy::sendReponse(Models\Test::test());
+        $obj = new Models\Test();
+        return ResponseProxy::sendReponse($obj->test($id, $email));
     }
 }
