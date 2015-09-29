@@ -2,6 +2,6 @@ log
 old
 vendor
 composer.lock
-app/MyApi/router.php
+app/MyApi
 app/config/config.[a-z]*.ini
 !app/config/config.env.ini
