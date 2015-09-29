@@ -11,7 +11,8 @@
   },
     "scripts": {
         "post-install-cmd": [
-            "mkdir log && chmod 777 log"
+            "mkdir log && chmod 777 log",
+            "cp -R app/MyApi-Example app/MyApi"
         ]
     }
 }

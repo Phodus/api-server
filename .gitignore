@@ -3,3 +3,5 @@ old
 vendor
 composer.lock
 app/MyApi/router.php
+app/config/config.[a-z]*.ini
+!app/config/config.env.ini
