@@ -49,6 +49,12 @@ Edit your hosts file
 192.168.X.X     api.mydomain.com
 ```
 
+Create a new config file per environment
+```
+# cd /var/www/api-server/app/config
+# cp config.env.ini config.dev.ini 
+```
+
 Go to this url under your web browser: http://api.mydomain.com/
 
 
