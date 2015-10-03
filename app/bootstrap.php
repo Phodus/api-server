@@ -193,6 +193,12 @@ function getHeaderLang() {
 define('_DEF__LANG', getHeaderLang());
 
 if(file_exists(APP_PATH . '/MyApi/router.php')) {
+    if(Config::getConfigEnv('mysql') !=== null) {
+        require ROOT_PATH . '/app/MyApi/init.mysql.php';
+    }
+    elseif(Config::getConfigEnv('mongodb') !== null) {
+        require ROOT_PATH . '/app/MyApi/init.mongodb.php';
+    }
     require APP_PATH . '/MyApi/router.php';
 }
 

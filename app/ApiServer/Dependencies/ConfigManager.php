@@ -38,10 +38,4 @@ class ConfigManager {
         }
         return null;
     }
-
-    public static function initMongoDbConn() {
-        $config = self::getConfigEnv('mongodb');
-        $m = new \MongoClient($config['dsn']);
-        return $m->{$config['database']};
-    }
 }
