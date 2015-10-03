@@ -7,11 +7,11 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
 $dbConfig = Config::getConfigEnv('mysql');
 $db = new medoo([
     'database_type' => 'mysql',
-    'database_name' => $dbConfig['database'],
-    'server' => $dbConfig['host'],
-    'port' => $dbConfig['port'],
-    'username' => $dbConfig['username'],
-    'password' => $dbConfig['password'],
+    'database_name' => $mysqlConfig['database'],
+    'server' => $mysqlConfig['host'],
+    'port' => $mysqlConfig['port'],
+    'username' => $mysqlConfig['username'],
+    'password' => $mysqlConfig['password'],
     'charset' => 'utf8'
 ]);
 

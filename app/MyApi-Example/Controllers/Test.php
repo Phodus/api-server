@@ -11,12 +11,12 @@ class Test extends ControllerManager
     public static function test_get()
     {
         $obj = new Models\Test();
-        return ResponseProxy::sendReponse($obj->test());
+        return $obj->test();
     }
 
     public static function test_post($id, $email)
     {
         $obj = new Models\Test();
-        return ResponseProxy::sendReponse($obj->test($id, $email));
+        return $obj->test($id, $email);
     }
 }
